@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World!</title>
+	<title>Markdown to pdf</title>
 	<link rel="stylesheet" type="text/css" href="../css/app.css">
 </head>
 <body>
-	<h1>Welcome to md to pdf</h1>
-	<button>Close window</button>
+	<div id="title-bar">
+		<div id="title">Markdown to pdf</div>
+		<div id="title-bar-btns">
+			<button id="min-btn">-</button>
+			<button id="max-btn">+</button>
+			<button id="unmax-btn" class="hidden">+/-</button>
+			<button id="close-btn">x</button>
+		</div>
+	</div>
+	<div id="content">
+		<p>Welcome to the Markdown to pdf Desktop App. Please choose a file to convert:</p>
 
+		<input type="file" id="md_file" name="md_file" value="">
+	</div>
+	<script type="text/javascript" src="../scripts/app.js"></script>
 </body>
 </html>
